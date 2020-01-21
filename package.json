@@ -1,6 +1,6 @@
 {
     "name": "react-colorpage",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "React component to view your colors file in a visual form",
     "main": "./lib/ColorPage.js",
     "license": "MIT",

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const ReactColors = ({colorsFile, importObjectName}) => {
+const ColorPage = ({colorsFile, importObjectName}) => {
     const colorsObj = {...colorsFile}
     console.log(Object.keys(colorsObj))
 
@@ -26,7 +26,7 @@ const ReactColors = ({colorsFile, importObjectName}) => {
     )
 }
 
-export default ReactColors
+export default ColorPage
 
 const Wrapper = styled.div`
 height: 100vh;
