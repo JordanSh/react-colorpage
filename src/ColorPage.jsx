@@ -1,15 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 
-const ColorPage = ({colorsFile, fileName}) => {
+const ReactColors = ({colorsFile, importObjectName}) => {
     const colorsObj = {...colorsFile}
+    console.log(Object.keys(colorsObj))
 
     const mapColors = Object.keys(colorsObj).map((key,index)=>{
         const colorCode = colorsObj[key]
             return(
             <ColorDiv colorCode={colorCode} key={index}>
                 <KeyName >
-                {`\$\{${fileName}.${key}\}`}
+                {`\$\{${importObjectName}.${key}\}`}
                 </KeyName>
                 <ColorName>
                 {colorsObj[key]}
@@ -25,7 +26,7 @@ const ColorPage = ({colorsFile, fileName}) => {
     )
 }
 
-export default ColorPage
+export default ReactColors
 
 const Wrapper = styled.div`
 height: 100vh;
